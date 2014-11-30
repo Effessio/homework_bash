@@ -1,0 +1,1 @@
+grep -r --include '*.log' -l -i '^error$' |tee file.txt | xargs ls -lh | awk '{print $9, $5}'
